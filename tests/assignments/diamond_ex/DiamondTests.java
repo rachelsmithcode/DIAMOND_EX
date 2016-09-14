@@ -35,4 +35,13 @@ public class DiamondTests {
     }
 
 
+    @Test
+    public void printRightTriangleOfGivenHeight() throws Exception {
+        String testAnswer = "*\n"
+                + "**\n"
+                + "***\n";
+        new Diamond().rightTriangle(3);
+        assertEquals(testAnswer, outContent.toString());
+    }
+
 }

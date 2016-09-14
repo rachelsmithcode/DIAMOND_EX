@@ -10,4 +10,14 @@ public class Diamond {
         String line = new String(new char[n]).replace("\0", "*");
         System.out.println(line);
     }
+
+
+    public void rightTriangle(int n) {
+
+        int i = 1;
+        while (n >= i) {
+            horizontalLine(i);
+            i += 1;
+        }
+    }
 }
