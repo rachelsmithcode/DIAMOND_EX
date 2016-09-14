@@ -6,36 +6,22 @@ package assignments.diamond_ex;
 public class Diamond {
 
 
+
+    public void diamondCenteredOver(int n) {
+
+        centredTriangle(n);
+        makeBottomTriangle(n);
+
+    }
+
     public void centredTriangle(int n) {
 
         int i = 1;
         int allign = calcSpace(i, n);
 
-        while (i <= (n+2)) {
-            buildLine(allign, i);
-            i += 2;
-            allign -= 1;
-        }
+        makeTopTriangle(i, n, allign);
+        makeCenterLine(n);
 
-    }
-
-
-    public void diamondCenteredOver(int n) {
-
-        int i = 1;
-        int allign = calcSpace(i, n);
-
-        while (i < (n+2)) {
-            buildLine(allign, i);
-            i += 2;
-            allign -= 1;
-        }
-
-        while (i > 0) {
-            buildLine(allign, i);
-            i -= 2;
-            allign += 1;
-        }
 
     }
 
@@ -46,11 +32,31 @@ public class Diamond {
 
 
     private void buildLine(int allign, int i) {
-        if (allign > 0) {
             System.out.println(makeSpace(allign) + horizontalLine(i));
-        } else {
-            System.out.println(horizontalLine(i));
+    }
+
+    private void makeTopTriangle(int i, int n, int allign) {
+        while (i < (n+2)) {
+            buildLine(allign, i);
+            i += 2;
+            allign -= 1;
         }
+
+    }
+
+    private void makeBottomTriangle(int n) {
+        int allign = 1;
+
+        while (n > 0) {
+            buildLine(allign, n);
+            n -= 2;
+            allign += 1;
+        }
+    }
+
+    private void makeCenterLine(int n) {
+        n +=2;
+        System.out.println(horizontalLine(n));
     }
 
     private String makeSpace(int n) {

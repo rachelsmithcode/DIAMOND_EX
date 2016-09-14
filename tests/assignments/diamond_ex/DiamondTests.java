@@ -32,7 +32,7 @@ public class DiamondTests {
     @Test
     public void printCentredTriangleOfGivenHeightOf3() throws Exception {
         String testAnswer =
-                        "  *\n"
+                          "  *\n"
                         + " ***\n"
                         + "*****\n";
         new Diamond().centredTriangle(3);
@@ -43,7 +43,7 @@ public class DiamondTests {
     @Test
     public void printCentredTriangleOfGivenHeightOf5() throws Exception {
         String testAnswer =
-                "   *\n"
+                          "   *\n"
                         + "  ***\n"
                         + " *****\n"
                         + "*******\n";
@@ -54,7 +54,7 @@ public class DiamondTests {
     @Test
     public void printCentredTriangleOfGivenHeightOf7() throws Exception {
         String testAnswer =
-                "    *\n"
+                          "    *\n"
                         + "   ***\n"
                         + "  *****\n"
                         + " *******\n"
@@ -66,12 +66,26 @@ public class DiamondTests {
     @Test
     public void printDiamondWithGivenNumber3() throws Exception {
         String testAnswer =
-                "  *\n"
+                          "  *\n"
                         + " ***\n"
                         + "*****\n"
                         + " ***\n"
                         + "  *\n";
         new Diamond().diamondCenteredOver(3);
+        assertEquals(testAnswer, outContent.toString());
+    }
+
+    @Test
+    public void printDiamondWithGivenNumber5() throws Exception {
+        String testAnswer =
+                          "   *\n"
+                        + "  ***\n"
+                        + " *****\n"
+                        + "*******\n"
+                        + " *****\n"
+                        + "  ***\n"
+                        + "   *\n";
+        new Diamond().diamondCenteredOver(5);
         assertEquals(testAnswer, outContent.toString());
     }
 
