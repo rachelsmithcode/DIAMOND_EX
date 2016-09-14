@@ -63,4 +63,16 @@ public class DiamondTests {
         assertEquals(testAnswer, outContent.toString());
     }
 
+    @Test
+    public void printDiamondWithGivenNumber3() throws Exception {
+        String testAnswer =
+                "  *\n"
+                        + " ***\n"
+                        + "*****\n"
+                        + " ***\n"
+                        + "  *\n";
+        new Diamond().diamondCenteredOver(3);
+        assertEquals(testAnswer, outContent.toString());
+    }
+
 }

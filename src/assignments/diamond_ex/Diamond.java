@@ -20,6 +20,26 @@ public class Diamond {
     }
 
 
+    public void diamondCenteredOver(int n) {
+
+        int i = 1;
+        int allign = calcSpace(i, n);
+
+        while (i < (n+2)) {
+            buildLine(allign, i);
+            i += 2;
+            allign -= 1;
+        }
+
+        while (i > 0) {
+            buildLine(allign, i);
+            i -= 2;
+            allign += 1;
+        }
+
+    }
+
+
     private int calcSpace(int i, int n) {
         return (n + 1) / 2;
     }
@@ -38,7 +58,6 @@ public class Diamond {
     }
 
     private String horizontalLine(int n) {
-
         return new String(new char[n]).replace("\0", "*");
     }
 
