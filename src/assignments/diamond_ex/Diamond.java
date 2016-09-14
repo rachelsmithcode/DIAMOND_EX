@@ -28,21 +28,18 @@ public class Diamond {
     private void buildLine(int allign, int i) {
         if (allign > 0) {
             System.out.println(makeSpace(allign) + horizontalLine(i));
-        }else {
+        } else {
             System.out.println(horizontalLine(i));
         }
     }
 
     private String makeSpace(int n) {
-
-        String space = new String(new char[n]).replace("\0", " ");
-        return space;
+        return new String(new char[n]).replace("\0", " ");
     }
 
     private String horizontalLine(int n) {
 
-        String line = new String(new char[n]).replace("\0", "*");
-        return line;
+        return new String(new char[n]).replace("\0", "*");
     }
 
 

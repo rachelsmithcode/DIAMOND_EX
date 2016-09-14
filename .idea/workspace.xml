@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bdb90df4-4dfe-4e47-9c19-88dfeeb38d0d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assignments/diamond_ex/Diamond.java" afterPath="$PROJECT_DIR$/src/assignments/diamond_ex/Diamond.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/assignments/diamond_ex/DiamondTests.java" afterPath="$PROJECT_DIR$/tests/assignments/diamond_ex/DiamondTests.java" />
     </list>
     <ignored path="DIAMOND_EX.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +26,13 @@
       <file leaf-file-name="Diamond.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assignments/diamond_ex/Diamond.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="510">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="e#374#375#0" expanded="true" />
                 <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#678#679#0" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,7 +41,7 @@
       <file leaf-file-name="DiamondTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/assignments/diamond_ex/DiamondTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="255">
               <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -586,12 +587,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DiamondTests - 2016.09.14 at 16h 23m 56s.xml">
-      <configuration name="DiamondTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DiamondTests - 2016.09.14 at 16h 30m 34s.xml">
-      <configuration name="DiamondTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DiamondTests - 2016.09.14 at 16h 30m 53s.xml">
       <configuration name="DiamondTests" configurationId="JUnit" />
     </history-entry>
@@ -599,6 +594,12 @@
       <configuration name="DiamondTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DiamondTests - 2016.09.14 at 17h 07m 23s.xml">
+      <configuration name="DiamondTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiamondTests - 2016.09.14 at 17h 09m 41s.xml">
+      <configuration name="DiamondTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiamondTests - 2016.09.14 at 17h 10m 27s.xml">
       <configuration name="DiamondTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DiamondTests_printCentredTriangleOfGivenHeightOf5 - 2016.09.14 at 16h 41m 54s.xml">
@@ -677,7 +678,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/assignments/diamond_ex/DiamondTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="255">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -691,11 +692,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assignments/diamond_ex/Diamond.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="510">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="e#374#375#0" expanded="true" />
             <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
           </folding>
         </state>
       </provider>
