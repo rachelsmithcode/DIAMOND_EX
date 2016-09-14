@@ -28,19 +28,38 @@ public class DiamondTests {
         System.setOut(null);
     }
 
+
     @Test
-    public void printsALineOfStars() throws Exception {
-        new Diamond().horizontalLine(6);
-        assertEquals("******\n", outContent.toString());
+    public void printCentredTriangleOfGivenHeightOf3() throws Exception {
+        String testAnswer =
+                        "  *\n"
+                        + " ***\n"
+                        + "*****\n";
+        new Diamond().centredTriangle(3);
+        assertEquals(testAnswer, outContent.toString());
     }
 
 
     @Test
-    public void printRightTriangleOfGivenHeight() throws Exception {
-        String testAnswer = "*\n"
-                + "**\n"
-                + "***\n";
-        new Diamond().rightTriangle(3);
+    public void printCentredTriangleOfGivenHeightOf5() throws Exception {
+        String testAnswer =
+                "   *\n"
+                        + "  ***\n"
+                        + " *****\n"
+                        + "*******\n";
+        new Diamond().centredTriangle(5);
+        assertEquals(testAnswer, outContent.toString());
+    }
+
+    @Test
+    public void printCentredTriangleOfGivenHeightOf7() throws Exception {
+        String testAnswer =
+                "    *\n"
+                        + "   ***\n"
+                        + "  *****\n"
+                        + " *******\n"
+                        + "*********\n";
+        new Diamond().centredTriangle(7);
         assertEquals(testAnswer, outContent.toString());
     }
 

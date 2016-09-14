@@ -5,19 +5,45 @@ package assignments.diamond_ex;
  */
 public class Diamond {
 
-    public void horizontalLine(int n) {
 
-        String line = new String(new char[n]).replace("\0", "*");
-        System.out.println(line);
-    }
-
-
-    public void rightTriangle(int n) {
+    public void centredTriangle(int n) {
 
         int i = 1;
-        while (n >= i) {
-            horizontalLine(i);
-            i += 1;
+        int allign = calcSpace(i, n);
+
+        while (i <= (n+2)) {
+            buildLine(allign, i);
+            i += 2;
+            allign -= 1;
+        }
+
+    }
+
+
+    private int calcSpace(int i, int n) {
+        return (n + 1) / 2;
+    }
+
+
+    private void buildLine(int allign, int i) {
+        if (allign > 0) {
+            System.out.println(makeSpace(allign) + horizontalLine(i));
+        }else {
+            System.out.println(horizontalLine(i));
         }
     }
+
+    private String makeSpace(int n) {
+
+        String space = new String(new char[n]).replace("\0", " ");
+        return space;
+    }
+
+    private String horizontalLine(int n) {
+
+        String line = new String(new char[n]).replace("\0", "*");
+        return line;
+    }
+
+
 }
