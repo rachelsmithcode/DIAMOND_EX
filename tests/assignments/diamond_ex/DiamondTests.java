@@ -29,9 +29,9 @@ public class DiamondTests {
     }
 
     @Test
-    public void printsAStar() throws Exception {
-        new Diamond().horizontalLine();
-        assertEquals("*\n", outContent.toString());
+    public void printsALineOfStars() throws Exception {
+        new Diamond().horizontalLine(6);
+        assertEquals("******\n", outContent.toString());
     }
 
 

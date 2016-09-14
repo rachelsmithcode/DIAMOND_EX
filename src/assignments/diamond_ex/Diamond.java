@@ -5,9 +5,9 @@ package assignments.diamond_ex;
  */
 public class Diamond {
 
-    public void horizontalLine() {
+    public void horizontalLine(int n) {
 
-        String line = "*";
+        String line = new String(new char[n]).replace("\0", "*");
         System.out.println(line);
     }
 }
