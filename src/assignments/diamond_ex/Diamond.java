@@ -5,6 +5,20 @@ package assignments.diamond_ex;
  */
 public class Diamond {
 
+    boolean nameGiven = true;
+    String name;
+
+    public Diamond() {
+        nameGiven = false;
+    }
+
+    public Diamond(String n) {
+        setName(n);
+    }
+
+    private void setName(String n) {
+        name = n;
+    }
 
 
     public void diamondCenteredOver(int n) {
@@ -55,8 +69,12 @@ public class Diamond {
     }
 
     private void makeCenterLine(int n) {
-        n +=2;
-        System.out.println(horizontalLine(n));
+        if (nameGiven) {
+            System.out.println(name);
+        } else {
+            n += 2;
+            System.out.println(horizontalLine(n));
+        }
     }
 
     private String makeSpace(int n) {
