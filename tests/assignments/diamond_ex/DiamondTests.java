@@ -71,7 +71,7 @@ public class DiamondTests {
                         + "*****\n"
                         + " ***\n"
                         + "  *\n";
-        new Diamond().diamondCenteredOver(3);
+        new Diamond().diamondCenteredOverStars(3);
         assertEquals(testAnswer, outContent.toString());
     }
 
@@ -85,19 +85,19 @@ public class DiamondTests {
                         + " *****\n"
                         + "  ***\n"
                         + "   *\n";
-        new Diamond().diamondCenteredOver(5);
+        new Diamond().diamondCenteredOverStars(5);
         assertEquals(testAnswer, outContent.toString());
     }
 
     @Test
-    public void printDiamondWithGivenNumber3AndNameRachel() throws Exception {
+    public void printDiamondWithNameRachelAndGivenNumber3() throws Exception {
         String testAnswer =
                           "  *\n"
                         + " ***\n"
                         + "Rachel\n"
                         + " ***\n"
                         + "  *\n";
-        new Diamond("Rachel").diamondCenteredOver(3);
+        new Diamond().diamondCenteredOverName(3);
         assertEquals(testAnswer, outContent.toString());
     }
 

@@ -5,25 +5,30 @@ package assignments.diamond_ex;
  */
 public class Diamond {
 
-    boolean nameGiven = true;
-    String name;
-
-    public Diamond() {
-        nameGiven = false;
+    public static void main (String[] args) {
+        new Diamond().runExamples();
     }
 
-    public Diamond(String n) {
-        setName(n);
+    public void runExamples() {
+        System.out.println("Given a number n, print a centered triangle. Example for n=3\n");
+        new Diamond().centredTriangle(3);
+        System.out.println("\nGiven a number n, print a centered diamond. Example for n=3\n");
+        new Diamond().diamondCenteredOverStars(3);
+        System.out.println("\nGiven a number n, print a centered diamond with your name in place of the middle line. Example for n=3\n");
+        new Diamond().diamondCenteredOverName(3);
     }
 
-    private void setName(String n) {
-        name = n;
-    }
 
-
-    public void diamondCenteredOver(int n) {
+    public void diamondCenteredOverStars(int n) {
 
         centredTriangle(n);
+        makeBottomTriangle(n);
+
+    }
+
+    public void diamondCenteredOverName(int n) {
+
+        centredTriangleWithName(n);
         makeBottomTriangle(n);
 
     }
@@ -35,6 +40,17 @@ public class Diamond {
 
         makeTopTriangle(i, n, allign);
         makeCenterLine(n);
+
+
+    }
+
+    private void centredTriangleWithName(int n) {
+
+        int i = 1;
+        int allign = calcSpace(i, n);
+
+        makeTopTriangle(i, n, allign);
+        System.out.println("Rachel");
 
 
     }
@@ -69,13 +85,11 @@ public class Diamond {
     }
 
     private void makeCenterLine(int n) {
-        if (nameGiven) {
-            System.out.println(name);
-        } else {
+
             n += 2;
             System.out.println(horizontalLine(n));
-        }
     }
+
 
     private String makeSpace(int n) {
         return new String(new char[n]).replace("\0", " ");
